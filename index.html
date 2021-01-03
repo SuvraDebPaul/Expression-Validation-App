@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <title>Expression Validation App Using JavaScript</title>
+    <style>
+      .valid {
+        background-color: Green;
+        color: white;
+        margin-top: 50px;
+        padding: 15px 10px;
+      }
+      .invalid {
+        background-color: red;
+        color: white;
+        margin-top: 50px;
+        padding: 15px 10px;
+      }
+      .btn-reset {
+        background-color: red;
+        color: white;
+      }
+      .title {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .title-head {
+        color: red;
+        text-align: center;
+      }
+      .container button {
+        margin: 0px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="title u-full-width">
+      <div class="container">
+        <h1>Assignment Expression Validation App</h1>
+      </div>
+    </section>
+    <section class="selection">
+      <div class="container">
+        <div class="title-head">
+          <h2>Please Select Below Option for Validation</h2>
+        </div>
+        <button class="button button-primary btn-phone">Phone number</button>
+        <button class="button button-primary btn-email">Email</button>
+        <button class="button button-primary btn-post">Post Code</button>
+        <button class="button btn-reset">Reset</button>
+      </div>
+    </section>
+    <section class="validation">
+      <div class="container">
+        <div class="phone-number valid" style="display: none">
+          <h4>Phone Number is Valid</h4>
+        </div>
+        <div class="phone-number-invalid invalid" style="display: none">
+          <h4>Phone Number is Invalid</h4>
+        </div>
+        <div class="email valid" style="display: none">
+          <h4>Email ID is Valid</h4>
+        </div>
+        <div class="email-invalid invalid" style="display: none">
+          <h4>Email ID is Invalid</h4>
+        </div>
+        <div class="post-code valid" style="display: none">
+          <h4>Post Code is Valid</h4>
+        </div>
+        <div class="post-code-invalid invalid" style="display: none">
+          <h4>Post Code is Invalid</h4>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
